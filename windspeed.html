@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Web Visualization Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Latitude</a>
+            </div>
+        
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="temperature.html">Temperature</a></li>
+                            <li><a href="humidity.html">Humidity</a></li>
+                            <li><a href="cloudiness.html">Cloudiness</a></li>
+                            <li><a href="windspeed.html">Wind Speed</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comparison.html">Comparison</a></li>
+                    <li><a href="data.html">Data</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br><br>
+
+    <div class="container">
+        <div class="row row-grid">
+    
+            <div class="col-md-8">
+                <div class="box box-left">
+
+                        <section id="summary">
+                            <h1>Wind Speed</h1><hr>
+
+                                <img width="100%" src="resources/assets/images/Fig4.png" alt="City Latitude vs Wind Speed">
+
+                            <p>There seems to be more data points for wind speed in the northern hemisphere. Wind Speed seems to have a 
+                                higher variance as we go above 40 degrees latitude. Majority of the data points also vary between 0 and 15 mph.
+                            </p>
+                        </section>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="box box-right">
+                    <section id="sidebar">
+                        <h2>Visualizations</h2><hr>
+
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-3 col-md-6">
+                                <a href="temperature.html"><img id="vis-landing" src="resources/assets/images/Fig1.png" alt="Latitude vs. Temperature"></a>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-6">
+                                <a href="humidity.html"><img id="vis-landing" src="resources/assets/images/Fig2.png" alt="Latitude vs. Humidity"></a>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-6">
+                                <a href="cloud.html"><img id="vis-landing" src="resources/assets/images/Fig3.png" alt="Latitude vs. Cloudiness"></a>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-6">
+                                <a href="wind.html"><img id="vis-landing" src="resources/assets/images/Fig4.png" alt="Latitude vs. Wind Speed"></a>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>
